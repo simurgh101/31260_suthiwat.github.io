@@ -1,0 +1,136 @@
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    max-width: 100%;
+    text-align: center;
+}
+
+header {
+    background-color: #4caf50;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3e8e41;
+    border-radius: 4px;
+}
+
+/* Section Styles */
+section {
+    padding: 5em 2em;
+    margin: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+/* Home Section Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.home-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 1.5em 3em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4caf50;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    section {
+        padding: 2em;
+        margin: 0.5em;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .home-button {
+        width: 90%;
+        font-size: 1.2em;
+        padding: 1em;
+    }
+}
